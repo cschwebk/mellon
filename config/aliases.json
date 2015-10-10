@@ -1,5 +1,6 @@
 {
-  "fr": "cast n 'fireball'",
+  "bd": "cast n 'block door'",
+  "fb": "cast n 'fireball'",
   "dm": "cast n 'detect magic'",
   "aa": "a;of a",
   "of": "order followers",
