@@ -24,7 +24,7 @@ var substitutions = Mellon.substitutions,
 SubstituionStore.dispatchToken = MellonDispatcher.register(function(action) {
     switch(action.type) {
         case ActionTypes.UPDATE_SUBSTITUTIONS:
-            substitutions = assign(substitutions, action.substitutions);
+            substitutions = action.substitutions;
             SubstituionStore.emitChange();
             break;
         default:
