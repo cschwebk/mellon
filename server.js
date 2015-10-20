@@ -10,12 +10,13 @@ var express = require('express'),
     server = require('http').createServer(app),
     io = require('socket.io')(server),
     exphbs = require('express-handlebars'),
-	logger = require('morgan');
+	morgan = require('morgan'),
+    logger = require('./lib/logger')();
 
 var DEBUG = true;
 
 app.use(express.static('dist'));
-app.use(logger('dev'));
+app.use(morgan('dev'));
 
 app.engine('.hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
 app.set('view engine', '.hbs');
@@ -33,13 +34,6 @@ server.listen('3000', function (err) {
 	console.log('express server listening on port 3000');
 });
 
-function writeMessageToClient(socket, type, message) {
-    socket.emit('message', {
-        type: type,
-        content: message + '\r\n'
-    });
-}
-
 io.on('connection', function(socket) {
     var mudSocket = null;
     socket.on('command', function(command) {
@@ -51,7 +45,7 @@ io.on('connection', function(socket) {
         switch (command.command) {
             case 'connect':
                 if (!mudSocket) {
-                    mudSocket = mud.connectToMud(config, socket, DEBUG);
+                    mudSocket = mud.connectToMud(config, socket, logger, DEBUG);
                 }
                 break;
             case 'zap':
@@ -81,8 +75,10 @@ io.on('connection', function(socket) {
 
     socket.on('message', function(message) {
         if (DEBUG) {
-            console.log('message: ' + JSON.stringify(message));
+            console.log(JSON.stringify(message));
         }
+
+        logger.log(message + '\r\n');
 
         if (!mudSocket) {
             socket.emit('message', {

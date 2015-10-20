@@ -5,12 +5,21 @@ var KEYCODES = {
     Escape: 27,
     ArrowUp: 38,
     ArrowDown: 40,
+    No0: 96,
     No1: 97,
     No2: 98,
+    No3: 99,
     No4: 100,
+    No5: 101,
     No6: 102,
+    No7: 103,
     No8: 104,
-    No9: 105
+    No9: 105,
+    Divide: 111,
+    Mult: 106,
+    Sub: 109,
+    Add: 107,
+    Dec: 110
 }
 
 var Input = React.createClass({
@@ -67,6 +76,9 @@ var Input = React.createClass({
                     });
                 }
                 break;
+            case KEYCODES.No0:
+                this.sendMessage('flee');
+                break;
             case KEYCODES.No1:
                 this.sendMessage('down');
                 break;
@@ -84,6 +96,18 @@ var Input = React.createClass({
                 break;
             case KEYCODES.No9:
                 this.sendMessage('up');
+                break;
+            case KEYCODES.Divide:
+                this.sendMessage('score');
+                break;
+            case KEYCODES.Mult:
+                this.sendMessage('stat');
+                break;
+            case KEYCODES.Sub:
+                this.sendMessage('info');
+                break;
+            case KEYCODES.Add:
+                this.sendMessage('where');
                 break;
         }
     },

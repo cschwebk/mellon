@@ -33,13 +33,10 @@
   "has arrived from the west": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mWEST!@#!@#[0m",
   "has arrived from the north": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mNORTH!@#!@#[0m",
   "has arrived from the south": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mSOUTH!@#!@#[0m",
-  "has arrived from the up": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mUP!@#!@#[0m",
-  "has arrived from the down": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mDOWN!@#!@#[0m",
-  "Your magical shield wears off.": "!@#!@#[35mYour magical shield wears off.!@#!@#[0m",
-  "You feel less protected.": "!@#!@#[35mYou feel less protected.!@#!@#[0m",
-  "Your legs feel heavier.": "!@#!@#[35mYour legs feel heavier.!@#!@#[0m",
-  "You feel weaker.": "!@#!@#[35mYou feel weaker.!@#!@#[0m",
-  "Your perception of magical auras wears off.": "!@#!@#[35mYour perception of magical auras wears off.!@#!@#[0m",
-  "The white aura around your body fades.": "!@#!@#[35mThe white aura around your body fades.!@#!@#[0m",
-  "The light of Aman fades away from you.": "!@#!@#[35mThe light of Aman fades away from you.!@#!@#[0m"
+  "has arrived from above": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mUP!@#!@#[0m",
+  "has arrived from below": "!@#!@#[32mARRIVED!@#!@#[0m !@#!@#[34mBELOW!@#!@#[0m",
+  "You begin to feel hungry.": "!@#!@#[31;1mYou begin to feel hungry.!@#!@#[0m",
+  "You are hungry.": "!@#!@#[31;1mYou are hungry.!@#!@#[0m",
+  "You begin to feel thirsty.": "!@#!@#[31;1mYou begin to feel thirsty.!@#!@#[0m",
+  "You are thirsty.": "[!@#!@#[31;1mYou are thirsty.!@#!@#[0m"
 }

@@ -31,7 +31,9 @@ function setupConnection() {
             });
         } else {
             Object.keys(substitutions).forEach(function(substitution) {
-                message.content = message.content.replace(new RegExp(substitution, 'g'), substitutions[substitution]);
+                if (message.content.indexOf(substitution) > -1) {
+                    message.content = message.content.replace(new RegExp(substitution, 'g'), substitutions[substitution]);
+                }
             });
 
             receiveMessage(message);
