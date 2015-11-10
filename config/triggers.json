@@ -1,6 +1,6 @@
 {
-  "Reconnecting.": "info #client__%l__%M__%X__%x__%T__%t",
-  "Never forget! Try to role-play...": "info #client__%l__%M__%X__%x__%T__%t",
+  "Reconnecting.": "info #client__%l__%M__%X__%x__%T__%t;cha wimp 50",
+  "Never forget! Try to role-play...": "info #client__%l__%M__%X__%x__%T__%t;cha wimp 50",
   "You receive your share of experience.": "info #client__%l__%M__%X__%x__%T__%t",
   "(leader) dismounts from a": "lead",
   "(leader) picks up a": "ride"

@@ -1,4 +1,6 @@
 {
+  "cloak": "get forest pace;rem fur;wear cloak;put fur pack",
+  "fur": "get fur pack;rem forest;put forest pack;wear fur",
   "block": "cast n 'block door'",
   "bob": "cast n 'breath of briskness'",
   "store": "cast n 'store'",
@@ -10,6 +12,7 @@
   "of": "order followers",
   "charm": "cast t 'charm'",
   "sl": "cast 'sleep'",
+  "slt": "cast t 'sleep'",
   "shield": "cast 'shield'",
   "li": "cast 'lightning bolt'",
   "cs": "cast 'colour spray'",
