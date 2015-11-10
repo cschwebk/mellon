@@ -55,7 +55,7 @@ gulp.task('watch', ['clean'], function() {
 
             nodemon({
                 script: 'server.js',
-                exclude: 'client'
+                ignore: ["config/*"]
             });
         }
     });
