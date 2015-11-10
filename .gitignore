@@ -1,7 +1,5 @@
 # Logs
-logs
-*.log
-logs/**.*
+logs/*.txt
 
 # Runtime data
 pids

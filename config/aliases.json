@@ -1,6 +1,11 @@
 {
   "cloak": "get forest pace;rem fur;wear cloak;put fur pack",
   "fur": "get fur pack;rem forest;put forest pack;wear fur",
+  "dumpkeys": "get all.key keyring;put tharbad keyring;drop all.key",
+  "man": "alias kk kill *man*",
+  "orc": "alias kk kill *orc*",
+  "troll": "alias kk kill *troll*",
+  "weed": "get pipe pack;wield pipe;rest;smoke pipe;stand;wield sword;put pipe pack",
   "block": "cast n 'block door'",
   "bob": "cast n 'breath of briskness'",
   "store": "cast n 'store'",
